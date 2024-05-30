@@ -1,0 +1,129 @@
+html,body {
+    width: 100%; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: @gray;
+    background-image: url(../assets/images/noise.png), url(../assets/images/bg.png);
+    background-position: 0 0, 0 0;
+    background-size: auto, 100% auto;
+    background-repeat: repeat, repeat-y;
+    color: @black;
+    font-family: @font1;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.375;
+    overflow-x: hidden;
+    padding-top: 147px;
+
+    @media @bw1660 {
+        padding-top: 111px;
+    }
+    
+    @media @bw768 {
+        padding-top: 70px;
+    }
+
+//сколлбар
+    &::-webkit-scrollbar {
+        width: 14px;               
+    }
+    &::-webkit-scrollbar-track {
+        background: @gray;        
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgb(185, 185, 185);    
+        border-radius: 7px;       
+        border: 3px solid @gray;  
+    }
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+
+
+.title{
+    margin: 0 0 150px;
+    box-sizing: border-box;
+    padding: 7px 45px 9px;
+    max-width: 624px;
+    width: 100%;
+    text-align: center;
+    background-color: #1f1e1e;
+    text-transform: uppercase;
+    font-family: "Lora";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+a {
+    color: @black;
+    outline: none;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+textarea,
+input,
+button,
+select{
+    box-shadow: none;
+    outline: none;
+    color: @black;
+    font-family: @font1;
+}
+
+button{
+    cursor: pointer;
+}
+
+input,
+textarea{
+    &::-webkit-input-placeholder{
+        color: @black;
+    }
+    &::-moz-placeholder{
+        color: @black;
+    }
+    &:-moz-placeholder{
+        color: @black;
+    }
+    &:-ms-input-placeholder{
+        color: @black;
+    }
+}
+
+input:focus,
+textarea:focus{
+    &::-webkit-input-placeholder{
+        color: transparent;
+    }
+    &::-moz-placeholder{
+        color: transparent;
+    }
+    &:-moz-placeholder{
+        color :transparent;
+    }
+    &:-ms-input-placeholder{
+        color: transparent;
+    }
+}
+
+textarea{
+    resize: none;
+}

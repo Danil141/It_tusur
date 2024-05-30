@@ -1,0 +1,132 @@
+.form{
+    
+    &__list{
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        row-gap: 30px;
+        column-gap: 60px;
+        
+
+        @media @bw768 {
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+        @media @bw1020 {
+            column-gap: 30px;
+        }
+
+        &--mb50{
+            margin-bottom: 50px;
+        }
+        
+        
+    }
+   
+    &__group{
+        width: calc(50% - 30px);
+
+        @media @bw768 {
+            width: 90%;
+        }
+        @media @bw600 {
+            width: 100%;
+        }
+    }
+
+    &__field{
+        display: block;
+        width: 100%;
+        
+        &--w50 {
+            width: calc(50% - 30px);
+
+            @media @bw768 {
+                width: 90%;
+            }
+            @media @bw600 {
+                width: 100%;
+            }   
+        }
+
+        &--mb30 {
+            margin-bottom: 30px;
+            
+        }
+        
+    }
+
+    &__btn{
+        max-width: 400px;
+        width: 100%;
+
+        @media @bw1020 {
+            max-width: 290px;
+        }
+        @media @bw768 {
+            margin-left: 5%;
+            max-width: 240px;
+        } 
+        @media @bw600 {
+            margin-left: 0;
+            max-width: 100%;
+            margin-bottom: 30px;
+            
+        } 
+    }
+
+    &__check{
+        @media @bw768 {
+            margin-left: 5%;
+        }
+        @media @bw600 {
+            margin-left: 0;
+        } 
+
+        &--mb40{
+            display: flex;
+            align-items: center;
+           margin-bottom: 40px;
+           height: 23px;
+        }
+    }
+
+    &__close{
+        max-width: 149px;
+        height: 52px;
+        width: 100%;
+        display: inline-block;
+        padding: 15px 40px;
+        margin-left: 20%;
+        text-decoration-line: underline;
+        line-height: normal;
+        box-sizing: border-box;
+        border: none;
+        background-color: transparent;
+        
+        color: @black;
+        font-family: @font1;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+        
+        
+        @media @bw1020 {
+            margin-left: 8%;
+            margin-bottom: 40px;
+        } 
+        @media @bw600 {
+            margin-left: 0;
+            max-width: 100%;
+            margin-bottom: 40px;
+            
+        } 
+    
+        &:hover {
+            color: @red;
+        }
+    }
+}

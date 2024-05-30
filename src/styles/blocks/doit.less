@@ -1,0 +1,87 @@
+.doit {
+    width: 100%;
+    overflow: hidden;
+
+    &__container {
+        margin: 227px auto 0;
+        width: 113vw;
+
+        @media @bw1660 {
+            margin-top:130px;
+        }
+        @media @bw1340 {
+            margin-top:100px;
+        }
+        
+    }
+
+    &__text {
+        position: relative;
+        margin: 0 0 0 -3.59vw;
+        width: 100%;
+        color: @black;
+        font-family: "mak";
+        font-size: 6.6vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        text-align: right;
+        overflow: hidden;
+
+        @media @bw1020 {
+            display: flex;
+            flex-direction: column;
+            margin-left: -3.5vw;
+            font-size: 10.44vw;
+        }
+
+        @media @bw400 {
+            font-size: 40px;
+        }
+    }
+
+    &__text-part-1,
+    &__text-part-2,
+    &__text-part-3 {
+        @media @bw1020 {
+            display: flex;
+            
+        }
+
+        @media @bw400 {
+            width: 140%;
+        }
+    }
+
+    &__text-part-1 {
+        @media @bw1020 {
+            justify-content: flex-start;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__text-part-2 {
+        @media @bw1020 {
+            justify-content: flex-end;
+            margin-right: -3.5vw;
+            margin-bottom: 20px;
+        }
+
+        @media @bw400 {
+            justify-content: flex-start;
+            margin-left: 92px;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__text-part-3 {
+        @media @bw1020 {
+            margin-left: 3vw;
+            width: 101%;
+        }
+
+        @media @bw400 {
+            margin-left: -45px;
+        }
+    }
+}

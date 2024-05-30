@@ -1,0 +1,55 @@
+.link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;   
+    height: 0; 
+    font-weight: 600;
+    font-size: 16px;
+    font-style: normal;
+    color: @black;
+    transition: color 0.2s;
+
+
+
+    &:hover{
+        @media(hover: hover){
+            color: @red; 
+        }
+    }
+    &:active{
+        color: @red;
+    }
+    &--disabled{
+        pointer-events: none;
+        opacity: 0.5;
+        
+    }
+    
+
+    &__name,
+    &__icon{
+        cursor: pointer;
+
+        
+    }
+    &__icon{
+        @media @bw1020 {
+            width: 67px;
+            height: 40px;
+        }
+
+        &--e{
+            @media @bw1020 {
+                width: 67px;
+                height: 60px;
+                
+                
+            }
+        }
+    }
+
+    
+
+   
+}

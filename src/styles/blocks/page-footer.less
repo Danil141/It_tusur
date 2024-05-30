@@ -1,0 +1,312 @@
+.page-footer{
+    box-sizing: border-box;
+    padding: 67px 0 75px;
+    @media @bw1660 {
+        padding: 100px 0 75px;
+    }
+
+    &__container{
+     .container;
+    }
+
+    &__border{
+        display: flex;
+        margin-bottom: 60px;
+
+        &::before,
+        &::after{
+            content: '';
+            flex-grow: 1;
+            height: 2px;
+            width: 2px;
+        }
+
+        &::before{
+            margin-right: 50px;
+            background:  linear-gradient(270deg, #1C1B1B 0%, rgba(255, 255, 255, 0.00) 82.86%);
+
+            @media @bw1660 {
+                margin-right: 47px;
+            }
+
+            @media @bw1340 {
+                margin-right: 26px;
+            }
+
+            @media @bw768 {
+                margin-right: 10px;
+            }
+        }
+
+        &::after{
+            margin-left: 50px;
+            background: linear-gradient(90deg, #1C1B1B 0%, rgba(255, 255, 255, 0.00) 100%);
+
+            @media @bw1660 {
+                margin-left: 47px;
+            }
+
+            @media @bw1340 {
+                margin-left: 26px;
+            }
+
+            @media @bw768 {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    &__nav{
+        margin-right: 30px;
+        position: relative;
+        padding-left: 26px;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+
+        @media @bw768 {
+            margin-bottom: 60px;
+        }
+        
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background-color: @red;
+
+
+        }
+    }
+
+    &__nav-link{
+        display: block;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: @black;
+        transition: color 0.2s;
+        @media @bw768 {
+            line-height: 1.7;
+        }
+        @media @bw400 {
+            font-size: 14px;
+        }
+        &:hover{
+            @media (hover:hover){
+                color: @red;
+            }
+        }
+        &:active{
+            color: @red;
+        }
+    }
+
+    &__form {
+        width: 410px;
+
+        @media @bw1340{
+            width: 388px;
+        }
+
+        @media @bw768 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        @media @bw500{
+            max-width: 499px;
+            
+            
+        }
+
+        
+    }
+    
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 64px;
+        
+        @media @bw768 {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        @media @bw400{
+            margin-bottom: 67px;
+        }
+    }
+
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        
+        
+        
+        @media @bw1020{
+            flex-wrap: wrap;/////////////
+        }
+        
+    }
+    &__docs{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 384px;
+        width: 100%;
+        
+
+        @media @bw1020 {
+            max-width: 300px;
+        }
+
+        @media @bw768 {
+            width: 100%;
+            max-width: 768px;
+        }
+    }
+
+    &__confidence,
+    &__cookies,
+    &__tagree {
+        font-weight: 600;
+    }
+
+    &__milenials,
+    &__confidence,
+    &__cookies {
+        color: @black;
+        font-family: @font1;
+        font-size: 16px;
+        font-style: normal;
+        line-height: 22px;
+
+        @media @bw1340 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    &__milenials{
+        margin-bottom: 20px;
+        width: 100%;
+        font-weight: 400;
+        @media @bw1660 {
+            margin-bottom: 10px;
+        }
+
+        @media @bw768 {
+            display: flex;
+            order: 2;
+            margin-bottom: 6.5px;
+            margin-left: auto;
+            justify-content: end;
+        }
+    }
+    
+    &__confidence,
+    &__cookies {
+        font-weight: 600;
+    }
+
+    &__cookies {
+        text-decoration: none;
+        @media @bw768 {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+    }
+
+    &__confidence {
+        margin-right: 60px;
+        text-decoration: none;
+
+        @media @bw1020 {
+            margin-right: 15px;
+        }
+
+        @media @bw768 {
+            margin: 0 20px 20px 0;
+        }
+    }
+
+    &__docs2{
+        display: inline-flex;
+        justify-content: flex-end;
+        align-self: flex-end;
+        width: 384px;
+        max-width: 384px;
+        
+
+        @media @bw768 {
+            margin-left: auto;
+        }
+    }
+
+    &__tagree {
+        @media @bw1020 {
+            font-size: 14px;
+        }
+        &-link{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__tagree-icon {
+        align-self: center;
+        margin-left: 15px;
+    }
+    &__social {
+        display: flex;
+        flex-direction: row;
+        gap: 44px;
+
+        @media @bw1020 {
+            order: -1;
+            margin-bottom: 60px;
+            width: 100%;
+            justify-content: center;
+        }
+        @media @bw400 {
+            margin: 0 auto;
+            margin-bottom: 64px;
+            width: 50%;
+            gap: 30px;
+        }
+
+        &-icon{
+            color: @white;
+            display: flex;
+        }
+        
+        
+    }
+    
+    &__link {
+        width: 58px;
+        height: 58px;
+        background-color: @black;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        transition: background-color 1s;
+        &:last-child {
+            margin: 0;
+        }
+        @media @bw400 {
+            width: 48px;
+            height: 48px;
+            
+        }
+        &:hover{ 
+            @media (hover:hover){
+                background-color: @red;
+            }
+        }
+    }
+
+}
